@@ -12,12 +12,12 @@ from sklearn.model_selection import KFold
 
 ## Import training data
 def load_temp_data ():
-    df1 = pd.read_csv(r'C:\Users\Hamidreza\Desktop\Sahar\Final_Data\Classification.csv')
+    df1 = pd.read_csv(r'FilePath\train.csv')
     return df1
 
 ## Import testing data
 def load_test_data ():
-    df2 = pd.read_csv(r'C:\Users\Hamidreza\Desktop\Sahar\Final_Data\Test.csv')
+    df2 = pd.read_csv(r'FilePath\Test.csv')
     return df2
 
 Test = load_test_data ()
