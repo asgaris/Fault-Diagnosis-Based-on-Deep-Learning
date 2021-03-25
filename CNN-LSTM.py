@@ -64,10 +64,10 @@ def create_model(dropout=0.2, learn_rate =0.1):
 
 # Hyperparameter study to find the best parameters
 model = KerasClassifier(build_fn=create_model, verbose=1)
-grid = {'nb_epoch': [150, 200, 300],
+grid = {'nb_epoch': [100, 150, 200, 300],
         'batch_size': [5, 10, 20],
-        'dropout': [0.2, 0.25],
-        'learn_rate': [0.0001, 0.001, 0.01]
+        'dropout': [0.1, 0.2, 0.25, 0.3],
+        'learn_rate': [0.0001, 0.001, 0.01, 0.1]
        }
 
 kfold = KFold(n_splits=5, random_state=None, shuffle=True)
