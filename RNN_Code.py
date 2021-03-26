@@ -1,3 +1,4 @@
+#This is Vanilla RNN code 
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense, Embedding
