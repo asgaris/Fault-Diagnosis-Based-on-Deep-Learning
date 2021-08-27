@@ -1,15 +1,12 @@
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, GridSearchCV, KFold
 from keras.models import Sequential
 from tensorflow import keras
 from keras.callbacks import EarlyStopping
-from keras.layers import Dense, Conv2D, Flatten
+from keras.layers import Dense, Conv2D, Flatten, GaussianNoise
 import pandas as pd
 from keras.layers.convolutional import MaxPooling2D
 from keras.layers.core import Dropout
-from sklearn.model_selection import GridSearchCV
 from keras.wrappers.scikit_learn import KerasClassifier
-from sklearn.model_selection import KFold
-from keras.layers import GaussianNoise
 
 ## Import training data
 def load_temp_data ():
