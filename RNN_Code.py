@@ -1,16 +1,13 @@
 #This is Vanilla RNN code 
 from tensorflow.keras.preprocessing import sequence
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import Dense, Embedding
-from tensorflow.keras.layers import LSTM
+from tensorflow.keras.layers import Dense, Embedding, LSTM
 import numpy as np
 import pandas as pd
 from keras.layers.core import Dropout
-from sklearn.model_selection import train_test_split
+from sklearn.model_selection import train_test_split, KFold, GridSearchCV
 from tensorflow import keras
-from sklearn.model_selection import GridSearchCV
 from keras.wrappers.scikit_learn import KerasClassifier
-from sklearn.model_selection import KFold
 from keras.callbacks import EarlyStopping
 
 ## Import training data
